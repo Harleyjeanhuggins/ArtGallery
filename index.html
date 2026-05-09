@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harley's Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="entrance-screen" aria-label="Gallery entrance">
+        <div class="entrance-haze"></div>
+        <div class="door-stage">
+            <button class="door-frame" id="enterDoor" type="button" aria-label="Open gallery door">
+                <span class="gallery-preview"></span>
+                <span class="door-panel door-panel-left"></span>
+                <span class="door-panel door-panel-right"></span>
+                <span class="door-handles"></span>
+            </button>
+
+            <div class="entrance-copy">
+                <p>Welcome to the Gallery</p>
+                <h1>The Digital Collection</h1>
+            </div>
+        </div>
+    </section>
+
+    <main id="gallery-app" aria-label="3D art gallery">
+        <canvas id="galleryCanvas"></canvas>
+
+        <div class="gallery-ui">
+            <div class="gallery-title">
+                <p>Harley.dev</p>
+                <h2>Digital Collection</h2>
+            </div>
+            <div class="control-strip" aria-label="Gallery controls">
+                <span>WASD</span>
+                <span>Arrow Keys</span>
+                <span>Mouse Wheel</span>
+                <span>Drag to Look</span>
+                <span>Click Art</span>
+                <button id="soundToggle" type="button" aria-pressed="false">Sound</button>
+            </div>
+        </div>
+
+        <div class="focus-card" id="focusCard" aria-live="polite">
+            <button id="closeFocus" type="button" aria-label="Return to walking view">Close</button>
+            <p id="focusSide">Gallery</p>
+            <h3 id="focusTitle">Walk the hall</h3>
+            <span id="focusMeta">Drag to look around. Click a framed piece to move closer.</span>
+            <small id="focusDetail">Move through the collection and let each room light up as you arrive.</small>
+        </div>
+
+        <div class="progress-map" id="progressMap" aria-label="Collection progress">
+            <div class="progress-line"></div>
+            <div class="progress-dots" id="progressDots"></div>
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
