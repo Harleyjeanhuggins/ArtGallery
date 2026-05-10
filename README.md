@@ -47,6 +47,6 @@ I wanted my finished artwork to be displayed where you can see them all together
 
 This was all created by me, and is open source. 
 
-##Live Site
+## Live Site
 https://harleyjdev.github.io/ArtGallery
 
