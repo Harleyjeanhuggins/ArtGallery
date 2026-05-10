@@ -29,11 +29,6 @@ clicks on it, allowing visitors to enter the digital gallery displaying framed a
 -Add additional gallery hallways
 -Add/fix light and shadow effects
    
-## How to open:
-1. Download the project files
-2. Open the folder
-3. double-click `index.html`
-   
 ## Inspiration:
 This project was created to combine web development with digital art presentation.
 I wanted my finished artwork to be displayed where you can see them all together. 
